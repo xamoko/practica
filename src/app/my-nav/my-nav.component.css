@@ -1,15 +1,25 @@
 .sidenav-container {
   height: 77%;
+
 }
 
 .sidenav {
   width: 200px;
-  background-color: #ededed;
+  /* background-color: #ededed; */
+  background-image: linear-gradient(#ffffff,  #ededed, #ffffff);
 }
 
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
-  background-image: linear-gradient(#32c300, #1b6301);
+  background-image: linear-gradient(#0B7233, #FAFAFA);
   height: 100px;
+}
+
+.label-user{
+  font-size: 12px;
+  color: #f0f0f0;
+  font-weight: lighter;
+  border: 1px solid red;
+  margin: auto;
 }

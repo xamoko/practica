@@ -2,12 +2,30 @@
 	margin: auto;
 	position: relative;
 }
-.Card {
-  max-width: 400px;
 
+app-header{
+	background-image: linear-gradient(#FAFAFA, #0B7233);
+}
+
+.Card {
+	max-width: 400px;
+}
+
+.container{
+	text-align: center;
 }
 .title{
 	
 }
 .usuario{
 	}
+
+app-footer{
+  background-image: linear-gradient(#FAFAFA, #0B7233);
+  position: absolute;
+  width: 100%;
+  z-index: 500;
+  color: white;
+	text-decoration: none;
+	bottom: 0%;
+  }

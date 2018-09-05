@@ -1,18 +1,4 @@
-footer{
-  background-image: linear-gradient(#FAFAFA, #0B7233);
-  position: absolute;
-  width: 100%;
-  z-index: 500;
-  color: white;
-  text-decoration: none;
-  }
-
   footer a{
     text-decoration: none;
     color: white;
   }
-
-/* .sub-footer{
-  background-color: #1b6301;
-  color: white;
-} */

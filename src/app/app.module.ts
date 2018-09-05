@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { MultilevelComponent } from './multilevel/multilevel.component';
 import { PanelMenuModule } from 'primeng/panelmenu';
+import { ButtonModule } from 'primeng/button';
+
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -40,6 +42,7 @@ const routes: Routes = [
     MatFormFieldModule,
     MatInputModule,
     PanelMenuModule,
+    ButtonModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

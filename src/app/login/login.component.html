@@ -8,16 +8,20 @@
       <mat-form-field appearance="outline" class="usuario">
         <mat-label>Usuario</mat-label>
           <input matInput placeholder="Usuario">
-          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-icon matSuffix>account_circle</mat-icon>
           
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Contraseña</mat-label>
-          <input matInput placeholder="Password">
-          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <input matInput placeholder="Contraseña">
+          <mat-icon matSuffix>lock</mat-icon>
           <mat-hint>Olvidé mi contraseña</mat-hint>
       </mat-form-field>
     </mat-card-content>
+    <mat-card-footer>
+      <button pButton type="button" label="Success" class="ui-button-rounded ui-button-success"></button>
+  </mat-card-footer>
   </mat-card-actions>
+  
 </mat-card>
 <app-footer></app-footer>

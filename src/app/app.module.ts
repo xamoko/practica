@@ -10,6 +10,8 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
+import { MultilevelComponent } from './multilevel/multilevel.component';
+import { PanelMenuModule } from 'primeng/panelmenu';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -22,7 +24,8 @@ const routes: Routes = [
     MyNavComponent,
     FooterComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    MultilevelComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ const routes: Routes = [
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    PanelMenuModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

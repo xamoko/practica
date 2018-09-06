@@ -15,23 +15,23 @@ export class MultilevelComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-          label: 'File',
+          label: 'Sistema',
           icon: 'pi pi-pw pi-file',
           items: [{
-                  label: 'New', 
+                  label: 'Usuarios', 
                   icon: 'pi pi-fw pi-plus',
                   items: [
                       {label: 'User', icon: 'pi pi-fw pi-user-plus'},
                       {label: 'Filter', icon: 'pi pi-fw pi-filter'}
                   ]
               },
-              {label: 'Open', icon: 'pi pi-fw pi-external-link'},
+              {label: 'Login', icon: 'pi pi-fw pi-external-link'},
               {separator: true},
               {label: 'Quit', icon: 'pi pi-fw pi-times'}
           ]
       },
       {
-          label: 'Edit',
+          label: 'Catalogos',
           icon: 'pi pi-fw pi-pencil',
           items: [
               {label: 'Delete', icon: 'pi pi-fw pi-trash'},
@@ -39,7 +39,7 @@ export class MultilevelComponent implements OnInit {
           ]
       },
       {
-          label: 'Help',
+          label: 'Proceso',
           icon: 'pi pi-fw pi-question',
           items: [
               {
@@ -66,7 +66,7 @@ export class MultilevelComponent implements OnInit {
           ]
       },
       {
-          label: 'Actions',
+          label: 'Reportes',
           icon: 'pi pi-fw pi-cog',
           items: [
               {
@@ -85,7 +85,28 @@ export class MultilevelComponent implements OnInit {
                   ]
               }
           ]
-      }
+      },
+      {
+        label: 'Ticket',
+        icon: 'pi pi-fw pi-cog',
+        items: [
+            {
+                label: 'Edit',
+                icon: 'pi pi-fw pi-pencil',
+                items: [
+                    {label: 'Save', icon: 'pi pi-fw pi-save'},
+                    {label: 'Update', icon: 'pi pi-fw pi-save'},
+                ]
+            },
+            {
+                label: 'Other',
+                icon: 'pi pi-fw pi-tags',
+                items: [
+                    {label: 'Delete', icon: 'pi pi-fw pi-minus'}
+                ]
+            }
+        ]
+    }
   ];
   }
 

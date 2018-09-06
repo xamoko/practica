@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { MultilevelComponent } from './multilevel/multilevel.component';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { ButtonModule } from 'primeng/button';
+import { HttpModule } from '@angular/http';
 
 
 const routes: Routes = [
@@ -44,6 +45,7 @@ const routes: Routes = [
     MatInputModule,
     PanelMenuModule,
     ButtonModule,
+    HttpModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

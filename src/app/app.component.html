@@ -1,3 +1,25 @@
 <!-- <app-my-nav></app-my-nav> -->
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
 <!-- <app-footer></app-footer> -->
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Nombret</th>
+        <th scope="col">Usuario</th>
+        <th scope="col">E-Mail</th>
+        <th scope="col">Strret</th>
+        <th scope="col">City</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let Users of user">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.street }}</td>
+            <td>{{ user. }}</td>
+        </tr>
+    </tbody>
+</table>

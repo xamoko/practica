@@ -10,8 +10,8 @@ import { Http } from '@angular/http';
 export class AppComponent {
   title = 'ikusi';
   Users : Array<Users>;
-//Consumimos el API
+
   constructor(private http: Http){
-    this.http.get('https://jsonplaceholder.typicode.com/users').subscribe(resp => this.Users = resp.json());
+    this.http.get('http://jsonplaceholder.typicode.com/users').subscribe(resp => this.Users = resp.json());
   }
 }

@@ -8,18 +8,18 @@
         <th scope="col">Nombre</th>
         <th scope="col">Usuario</th>
         <th scope="col">E-Mail</th>
-        <th scope="col">Steret</th>
+        <th scope="col">Street</th>
         <th scope="col">City</th>
       </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let Users of user">
+        <tr *ngFor="let user of Users">
             <th scope="row">{{ user.id }}</th>
             <th scope="row">{{ user.name }}</th>
             <th scope="row">{{ user.username }}</th>
             <th scope="row">{{ user.email }}</th>
-            <th scope="row">{{ user.addres.strret }}</th>
-            <th scope="row">{{ user.addres.city }}</th>
+            <th scope="row">{{ user.address.street }}</th>
+            <th scope="row">{{ user.address.city }}</th>
         </tr>
     </tbody>
 </table>

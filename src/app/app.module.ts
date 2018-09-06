@@ -14,7 +14,7 @@ import { MultilevelComponent } from './multilevel/multilevel.component';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { ButtonModule } from 'primeng/button';
 import { HttpModule } from '@angular/http';
-
+import { Http } from '@angular/http';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },

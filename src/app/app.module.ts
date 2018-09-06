@@ -17,6 +17,7 @@ import { ButtonModule } from 'primeng/button';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
+  { path: '', component: LoginComponent },
   { path: 'inicio', component: MyNavComponent }
 ];
 

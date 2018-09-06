@@ -21,7 +21,7 @@
   color: #f0f0f0;
   font-weight: lighter;
   border: 1px solid red;
-  margin: auto;
+  margin: auto, 0 0 auto;
 }
 
 

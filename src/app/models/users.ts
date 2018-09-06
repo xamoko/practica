@@ -1,9 +1,10 @@
-import { Addres } from './addres';
+import {  Address } from "./address";
+
 export class Users {
     id: number;
     name: string;
-    usernmae:string;
+    username:string;
     email: string;
-    address: Addres;
+    address: Address;
 
 }

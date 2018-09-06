@@ -1,5 +1,5 @@
 .sidenav-container {
-  height: 77%;
+  height: 100%;
 
 }
 
@@ -18,10 +18,14 @@
 
 .label-user{
   font-size: 12px;
-  color: #f0f0f0;
   font-weight: lighter;
-  border: 1px solid red;
-  margin: auto, 0 0 auto;
+  margin: 0 0 0 auto;
+}
+
+.label-user a{
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #523c13;
 }
 
 

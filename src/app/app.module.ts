@@ -16,11 +16,14 @@ import { PanelMenuModule } from 'primeng/panelmenu';
 import { ButtonModule } from 'primeng/button';
 import { HttpModule } from '@angular/http';
 import { Http } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+import { LoginGuard } from './login.guard';
+import { NoLoginGuard } from './no-login.guard';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: '', component: LoginComponent },
-  { path: 'inicio', component: MyNavComponent }
+  { path: 'login', component: LoginComponent,canActivate: [NoLoginGuard] },
+  { path: '', component: LoginComponent, canActivate: [NoLoginGuard] },
+  { path: 'inicio', component: MyNavComponent, canActivate: [LoginGuard] }
 ];
 
 @NgModule({
@@ -47,10 +50,11 @@ const routes: Routes = [
     PanelMenuModule,
     ButtonModule,
     HttpModule,
+    FormsModule,
     RouterModule.forRoot(routes),
     MatSelectModule
   ],
-  providers: [],
+  providers: [LoginGuard, NoLoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

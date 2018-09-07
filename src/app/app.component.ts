@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { Users } from './models/users';
-import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +7,4 @@ import { Http } from '@angular/http';
 })
 export class AppComponent {
   title = 'ikusi';
-  Users : Array<Users>;
-
-  constructor(private http: Http){
-    this.http.get('http://jsonplaceholder.typicode.com/users').subscribe(resp => this.Users = resp.json());
-  }
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import { NgForm } from '@angular/forms';
+
 
 
 @Component({
@@ -9,12 +11,21 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router:Router) { }
-
+ 
+  constructor( private router:Router){}
   ngOnInit() {
   }
   handleClick() {
-    this.router.navigate(['inicio']);
+    
+  }
+  /* En esta parte estamos validando los datos para poder loguearnos */
+  login(form: NgForm){
+    console.log(form.value);
+    if(form.value.usuario==='Admin' && form.value.password==='Admin')
+    {
+      localStorage.setItem('Admin', form.value.usuario);
+      this.router.navigate(['inicio']);
+    }
   }
 
 }

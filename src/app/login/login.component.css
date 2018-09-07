@@ -9,7 +9,6 @@ app-header{
 
 .Card {
 	max-width: 400px;
-	margin-bottom: 64px;
 }
 
 .container{
@@ -31,9 +30,8 @@ app-footer{
   background-image: linear-gradient(#FAFAFA, #0B7233);
   position: absolute;
   width: 100%;
-  /* z-index: 500; */
+  z-index: 500;
   color: white;
-  text-decoration: none;
-  margin-top: auto;
-
-}
+	text-decoration: none;
+	bottom: 0%;
+  }

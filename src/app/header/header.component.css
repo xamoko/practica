@@ -2,18 +2,14 @@
     background-image: linear-gradient(#0B7233, #FAFAFA);
     height: 100px;
     margin: 0 0 80px 0;
-    width: 100%;
-    padding: 0 0 0 0%;
 }
 
 .powered{
     font-size: 13px;
-    margin: 5px;
 }
 
 .social{
  margin-left: auto;   
- height: 32px;
 }
 
 .social i{
@@ -34,12 +30,6 @@
 
 #language-icon{
     color: gray;
-    font-size: 30px
-}
-
-.selector{
-    font-size: 5px;
-    font-size: 12px;
 }
 
 .form{
@@ -47,33 +37,6 @@
     width: 100px;
 }
 
-.tool{
-    display: flex;
-    margin-left: auto;
-}
-
-@media(max-width: 648px){
-
-    .header img{
-        width: 150px;
-    }
-
-    .powered{
-        font-size: 9px;
-    }
-    #social-face{
-        font-size: 30px;
-    }
-    
-    #social-twit{
-        font-size: 30px;
-    }
-
-    .tool{
-        display: block;
-        margin: 0 0 0 0;
-        border: 1px solid red;
-        height: 100px;
-    }
-
+.selector{
+    font-size: 12px;
 }
